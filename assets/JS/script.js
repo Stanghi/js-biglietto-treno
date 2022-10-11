@@ -23,8 +23,10 @@ else{
     prezzoFinale = prezzoBiglietto
 }
 
+let prezzoFinaleFixed = prezzoFinale.toFixed(2);
+
 let outputDistanza = `${distanza} km`
-let outputPrezzoFinale = `<strong class="color-output">${prezzoFinale} €<strong>`
+let outputPrezzoFinale = `<strong class="color-output">${prezzoFinaleFixed} €<strong>`
 
 document.getElementById('distanza').innerHTML += outputDistanza;
 document.getElementById('etaUtente').innerHTML += etaUtente;

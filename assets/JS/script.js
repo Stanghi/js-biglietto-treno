@@ -4,7 +4,6 @@
 // DONE - va applicato uno sconto del 40% per gli over 65.
 // TO DO - calcolare il prezzo Finaleale del viaggio con massimo due decimali, per indicare centesimi sul prezzo
 
-
 const tariffaKm = 0.21;
 const maggioreEta = 18;
 const overEta = 65;
@@ -30,4 +29,9 @@ else{
     prezzoFinale = prezzoBiglietto
 }
 
-document.getElementById('prezzo').innerHTML += prezzoFinale;
+let outputDistanza = `${distanza} km`
+let outputPrezzoFinale = `${prezzoFinale} €`
+
+document.getElementById('distanza').innerHTML += outputDistanza;
+document.getElementById('etaUtente').innerHTML += etaUtente;
+document.getElementById('prezzo').innerHTML += outputPrezzoFinale;

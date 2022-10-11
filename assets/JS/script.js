@@ -1,9 +1,3 @@
-// DONE - chiedere all’utente il numero di chilometri che vuole percorrere e l’età del passeggero.
-// DONE - il prezzo del biglietto è definito in base ai km (0.21 € al km)
-// DONE - va applicato uno sconto del 20% per i minorenni
-// DONE - va applicato uno sconto del 40% per gli over 65.
-// TO DO - calcolare il prezzo Finaleale del viaggio con massimo due decimali, per indicare centesimi sul prezzo
-
 const tariffaKm = 0.21;
 const maggioreEta = 18;
 const overEta = 65;
@@ -30,7 +24,7 @@ else{
 }
 
 let outputDistanza = `${distanza} km`
-let outputPrezzoFinale = `${prezzoFinale} €`
+let outputPrezzoFinale = `<strong class="color-output">${prezzoFinale} €<strong>`
 
 document.getElementById('distanza').innerHTML += outputDistanza;
 document.getElementById('etaUtente').innerHTML += etaUtente;
